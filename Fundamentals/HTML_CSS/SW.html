@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Star Wars</title>
+</head>
+<body>
+  <h1>Galaxy far far away...</h1>
+
+    <h2>Favorite Character</h2>
+    <strong id="character-name">Unknown</strong>
+
+    <button id="get-character">Get Character</button>
+
+
+
+    <script>
+        document.getElementById('get-character').onclick = function () {
+            fetch('https://swapi.dev/api/people/' + Math.ceil(Math.random() * 20))
+                .then(res => res.json())
+                .then(character => {
+                    document.getElementById('character-name').textContent = character.name;
+                })
+        };
+    </script>
+
+    <img src="StarWars.jpg" alt="StarWars">
+</body>
+</html>
