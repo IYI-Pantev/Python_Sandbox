@@ -1,0 +1,1 @@
+rainbow_colours = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"]
