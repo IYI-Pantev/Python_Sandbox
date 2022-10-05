@@ -1,4 +1,3 @@
-import random
 import turtle as t # alias for turtle
 
 tim = t.Turtle()
