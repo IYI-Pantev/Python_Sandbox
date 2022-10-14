@@ -1,8 +1,10 @@
 from turtle import Turtle
+
 X_POSITION = 0
 Y_POSITION = 270
 ALIGNMENT = "center"
 FONT = ("Courier", 16, "normal")
+
 
 class Scoreboard(Turtle):
 
