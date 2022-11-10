@@ -2,12 +2,12 @@ import turtle as t
 import random
 from data import rainbow_colours
 
-
 tim = t.Turtle()
 tim.shape("turtle")
 
 tim.color("red", "green")
 tim.speed("fastest")
+
 
 def draw_spirograph(size_of_gap):
     for _ in range(int(360 / size_of_gap)):
@@ -18,8 +18,6 @@ def draw_spirograph(size_of_gap):
 
 
 draw_spirograph(5)
-
-
 
 screen = t.Screen()
 screen.exitonclick()
