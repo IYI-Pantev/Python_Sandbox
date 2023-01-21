@@ -1,11 +1,18 @@
 from tkinter import *
 
+
 window = Tk()
 
 window.title("CA$ to BGN")
 window.minsize(width=320, height=220)
 window.config(padx=25, pady=25)
 
+#Canvas
+canvas = Canvas(width=512, height=358)
+
+flag = PhotoImage(file="canada-flag-icon.png")
+canvas.create_image(512, 358, image=flag)
+canvas.place(anchor=CENTER)
 # Label equals to...
 
 expl_label = Label(text="is equal to")
